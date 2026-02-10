@@ -1,9 +1,206 @@
+/* ============================= */
+/* BASE DA PÁGINA */
+/* ============================= */
+
+#base2 {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px 10% 80px;
+    background: linear-gradient(135deg, #f6f6f6, #ffffff);
+}
+
+#base2 tr {
+    width: 100%;
+}
+
+#base2 td {
+    vertical-align: middle;
+}
+
+/* ============================= */
+/* TÍTULO PRINCIPAL */
+/* ============================= */
+
+#base2 h1 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+/* Linha decorativa abaixo do título */
+#base2 h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: rgb(161, 33, 33);
+    margin: 18px auto 0;
+    border-radius: 4px;
+}
+
+/* ============================= */
+/* BLOCO DE CONTATOS */
+/* ============================= */
+
+#baseTexto {
+    padding-left: 80px;
+    max-width: 760px;
+}
+
+#baseTexto h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+
+#baseTexto p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+#baseTexto i {
+    color: rgb(161, 33, 33);
+}
+
+/* ============================= */
+/* BOTÃO WHATSAPP */
+/* ============================= */
+
 #btnWpp {
-  width: 100%;
-  padding: 10px;
-  background-color: brown;
-  color: #fff;
-  border-radius: 5px;
-  font-size: medium;
-  cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, rgb(161, 33, 33), #8f1c1c);
+    color: #fff;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    margin-bottom: 10px;
+}
+
+#btnWpp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+   /* HEADER */
+
+    #header {
+        padding: 10px 5%;
+    }
+
+    /* força a tabela a virar um container flex */
+    #header table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header tr {
+        display: block;
+        width: 100%;
+    }
+
+    #header td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logotipo {
+        margin-bottom: 2px;
+        font-size: 26px;
+    }
+
+    #navegacao {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    #navegacao a {
+        margin: 0;
+        font-size: 15px;
+        padding: 6px 0;
+        padding-right: 15px;
+    }
+    
+    #base2 {
+        padding: 80px 8%;
+    }
+
+    #baseTexto {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    #base2 tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #baseTexto {
+        padding-left: 0;
+        padding-top: 60px !important;
+    }
+
+    #baseTexto h2 {
+        margin-top: 45px;
+    }
+
+    #btnWpp {
+        margin: 0 auto 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    #base2 {
+        padding: 60px 6%;
+    }
+
+    #base2 h1 {
+        font-size: 32px;
+        padding-top: 20%;
+    }
+
+    #baseTexto h2 {
+        font-size: 20px;
+    }
+
+    #baseTexto p {
+        font-size: 15px;
+    }
+
+    #btnWpp {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 60px 6%;
+        text-align: center;
+    }
 }
