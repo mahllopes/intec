@@ -1,0 +1,9 @@
+#btnWpp {
+  width: 100%;
+  padding: 10px;
+  background-color: brown;
+  color: #fff;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+}

@@ -1,0 +1,129 @@
+/* ===============================
+   PRODUTOS – INTEC
+   =============================== */
+
+#produtos {
+    background: #f7f8fa;
+    padding: 90px 8%;
+}
+
+/* HEADER DA PÁGINA */
+.produtos-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.produtos-header h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+}
+
+.produtos-header p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* GRID */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+/* CARD */
+.produto-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+
+.produto-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IMAGEM */
+.produto-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* TÍTULO */
+.produto-card h2 {
+    padding: 22px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(161, 33, 33);
+    background: #fff;
+}
+
+/* ===============================
+   RESPONSIVO
+   =============================== */
+
+@media (max-width: 600px) {
+    .produtos-header h1 {
+        font-size: 32px;
+    }
+
+    .produto-card img {
+        height: 220px;
+    }
+
+     /* HEADER */
+
+    #header {
+        padding: 10px 5%;
+    }
+
+    /* força a tabela a virar um container flex */
+    #header table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header tr {
+        display: block;
+        width: 100%;
+    }
+
+    #header td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logotipo {
+        margin-bottom: 2px;
+        font-size: 26px;
+    }
+
+    #navegacao {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    #navegacao a {
+        margin: 0;
+        font-size: 15px;
+        padding: 6px 0;
+        padding-right: 15px;
+    }
+
+}

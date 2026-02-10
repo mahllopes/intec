@@ -1,0 +1,166 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background-color: #f6f7f9;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* TÍTULOS */
+h2, h3, h4 {
+    font-weight: 600;
+}
+
+/* HEADER */
+#header {
+    width: 100%;
+    background: #490e0e;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header table {
+    width: 100%;
+}
+
+#logotipo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#navegacao {
+    text-align: right;
+}
+
+#navegacao a {
+    margin-left: 25px;
+    color: #be9494;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#navegacao a:hover {
+    color: #fff;
+}
+
+/* SEÇÕES */
+section, div {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background: #490e0e;
+    color: #8b6464;
+    padding: 30px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* LOGO */
+footer h3 {
+    color: #8b6464;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* NAVEGAÇÃO */
+#navegacaoRodape {
+    display: flex;
+    gap: 25px;
+}
+
+#navegacaoRodape a {
+    color: #8b6464;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+#navegacaoRodape a:hover {
+    color: #8b6464;
+}
+
+/* SOCIAL */
+#socialRodape {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#socialRodape h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8b6464;
+}
+
+#socialRodape ul {
+    list-style: none;
+}
+
+#socialRodape i {
+    font-size: 18px;
+    color: #8b6464;
+    transition: color 0.2s;
+}
+
+#socialRodape i:hover {
+    color: #e11d48;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navegacaoRodape {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    #socialRodape {
+        justify-content: center;
+    }
+}
+
+/* ASSINATURA */
+#assinatura {
+    background: #2e0b0b;
+    color: #8b6464;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    #navegacao {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

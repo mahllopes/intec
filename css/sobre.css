@@ -1,0 +1,163 @@
+/* =========================
+   BASE VISUAL PADRÃO
+========================= */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* =========================
+   BLOCO PADRÃO (SUPERIOR E INFERIOR)
+========================= */
+
+#base2,
+table[style] {
+    width: 100%;
+    padding: 100px 10%;
+    background: linear-gradient(180deg, #ffffff, #f1f5f9);
+}
+
+#base2 table,
+table[style] {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#base2 td,
+table[style] td {
+    vertical-align: middle;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+#base2 h1,
+table[style] h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+#baseTexto {
+    padding-left: 60px;
+}
+
+table[style] #baseTexto {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+#baseTexto h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+#baseTexto p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #475569;
+    max-width: 520px;
+    text-align: justify;
+}
+
+/* =========================
+   IMAGEM CENTRAL
+========================= */
+
+#colunaTexto img {
+    width: 100%;
+    display: block;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    #header {
+        padding: 10px 5%;
+    }
+
+    /* força a tabela a virar um container flex */
+    #header table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header tr {
+        display: block;
+        width: 100%;
+    }
+
+    #header td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logotipo {
+        margin-bottom: 2px;
+        font-size: 26px;
+    }
+
+    #navegacao {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    #navegacao a {
+        margin: 0;
+        font-size: 15px;
+        padding: 6px 0;
+        padding-right: 15px;
+    }
+
+
+    #base2,
+    table[style] {
+        padding: 70px 6%;
+    }
+
+    #base2 table,
+    #base2 tr,
+    #base2 td,
+    table[style] tr,
+    table[style] td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #base2 h1,
+    table[style] h1 {
+        font-size: 36px;
+    }
+
+    #baseTexto {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    #baseTexto p {
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}

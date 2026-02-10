@@ -1,0 +1,142 @@
+/* ===============================
+   PRODUTO SINGLE – INTEC
+   =============================== */
+
+#produtos {
+    padding: 40px 8%;
+}
+
+/* BOTÃO VOLTAR */
+#botaoVoltar {
+    margin-bottom: 30px;
+}
+
+.botao-voltar {
+    background: transparent;
+    border: 0px;
+    color: #1f2a44;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-voltar i {
+    margin-right: 8px;
+}
+
+.botao-voltar:hover {
+    color: #b94747;
+}
+
+/* ===============================
+   BLOCO PRINCIPAL
+   =============================== */
+
+#base {
+    display: grid;
+    grid-template-columns: 45% 55%; 
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* IMAGEM */
+.produto-imagem img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+    display: block;
+    padding-top: 30px;
+}
+
+/* TEXTO */
+.produto-texto h1 {
+    font-size: 48px;
+    color: #1f2a44;
+    margin-bottom: 20px;
+}
+
+.produto-texto p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    max-width: 520px;
+}
+
+/* ===============================
+   GALERIA DE ITENS
+   =============================== */
+
+#quadroImagem {
+    margin-bottom: 80px;
+}
+
+#quadroImagem table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 40px;
+}
+
+#quadroImagem td {
+    vertical-align: top;
+}
+
+#quadroImagem img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 6px;
+    border: 0px;
+}
+
+#quadroImagem p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #333;
+    max-width: 280px;
+}
+
+#quadroImagem li {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #333;
+    max-width: 280px;
+}
+
+/* ===============================
+   RESPONSIVO
+   =============================== */
+
+@media (max-width: 900px) {
+
+    #base {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .produto-imagem img {
+        margin: 0 auto;
+    }
+
+    .produto-texto p {
+        margin: 0 auto;
+    }
+
+    #quadroImagem table,
+    #quadroImagem tr,
+    #quadroImagem td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #quadroImagem td {
+        margin-bottom: 40px;
+    }
+
+    #quadroImagem img {
+        max-width: 90%;
+    }
+}
